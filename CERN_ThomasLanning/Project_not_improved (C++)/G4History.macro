@@ -1,0 +1,12 @@
+/globalField/verbose 1
+/globalField/setValue 0 0 10 tesla
+/gun/particle e-
+/gun/energy 300 MeV
+/run/beamOn 0
+/vis/scene/notifyHandlers scene-0
+/vis/geometry/set/colour Detector1 -1 0 1 0 0.25
+/vis/scene/notifyHandlers
+/vis/geometry/set/colour Detector2 -1 0.2 0.4 1 0.25
+/vis/scene/notifyHandlers
+/gun/particle gamma
+/gun/energy 300 MeV
