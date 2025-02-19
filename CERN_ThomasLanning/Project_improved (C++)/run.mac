@@ -1,0 +1,21 @@
+# Initialize G4
+/control/verbose 2
+/control/saveHistory
+#
+# Set up magnetic field
+/globalField/verbose 1
+/globalField/setValue 0 0 10 tesla
+#
+# Set up beam
+/gun/particle e-
+/gun/energy 300 MeV
+#
+# Initialise physics
+/run/beamOn 0
+#
+#change the shield/detectror colors and opacities.
+/vis/geometry/set/colour Detector12 -1 0 1 0 0.25
+/vis/geometry/set/colour Detector2 -1 0.2 0.4 1 0.25
+#
+/gun/particle gamma
+/gun/energy 300 MeV
